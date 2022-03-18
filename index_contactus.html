@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U&A Website | Contact Us</title>
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+    <style>
+/* @viewport{
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
+
+@-ms-viewport{
+    width: extend-to-zoom;
+    zoom: 1.0;
+}
+       body{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header{
+    overflow: hidden;
+    height: 100vh;
+}
+.vid-bg{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-height: 100%;
+    min-width: 100%;
+    background-size: cover;
+} */
+
+@media screen and (max-width: 750px){
+*{
+    margin: 0;
+}
+
+.nav-area{
+    background: rgba(0,0,0,0.7);
+    height: 60px;
+    position: absolute;
+    width: 100%;
+}
+
+.logo{
+    margin: 0 50px;
+    height: 60px;
+    float: right;
+    color: white;
+    font-size: 35px;
+    text-transform: capitalize;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+/* 
+    .banner-text{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.banner-text h2{
+    color: white;
+    font-size: 65px;
+    line-height: 70px;
+    margin: 0;
+
+}
+
+.banner-text h3{
+     color: white;
+     margin: 0;
+     font-weight: lighter;
+     font-style: italic;
+     padding-top: 40px;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     color: black;
+} */
+
+
+.banner-text{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.banner-text h2{
+    color: orange;
+    font-size: 35px;
+    line-height: 70px;
+    margin: 0;
+}
+
+.banner-text h3{
+    font-size: 20px;
+    float: left;
+    color: white;
+}
+
+.banner-text p{
+    color: orange;
+    font-size: 30px;
+    line-height: 70px;
+    margin: 0;
+    font-weight: bold;
+}
+
+img{
+    width: 80px;
+    height: 80px;
+    float: left;
+}
+
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0.75)),url("./2.jpg");
+    /* position: absolute; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.next button{
+    position: absolute;
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 460px 595px;
+    padding: 10px 25px;
+    width: 12%;
+    border: 0;
+    border-radius: 30px;
+    background-color: orange;
+    box-shadow: 0 0 10px 0 rgba(8, 0, 0, 0.4);
+}
+
+.next button:hover{
+    transition: 1.5s;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.next button:active{
+    background-color: white;
+}
+
+.sidebar{
+    font-family: sans-serif;
+    font-weight: bolder;
+ margin: 6px 40px;
+ position: absolute;
+}
+
+#mainbox{
+ font-size: 36px;
+ cursor: pointer;
+ transition: all .6s;
+ color: white;
+}
+.sidemenu{
+ position: fixed;
+ top: 0px;
+ left: 0px;
+ height: 100%;
+ width: 0px;
+ background-color: #222;
+ z-index: 1;
+ padding-top: 100px;
+ overflow-x: hidden;
+ transition: all .5s;
+}
+.sidemenu a{
+ padding: 8px 8px 8px 64px;
+ text-decoration: none;
+ font-size: 25px;
+ font-weight: normal;
+ color: #999;
+ display: block;
+}
+.menuelements a:hover{
+  color: white;
+  font-size: 28px;
+  background-color: rgba(8, 0, 0, 0.4);
+  transition: ease-in-out;
+}
+.sidemenu .closebtn{
+ position: absolute;
+ top: 0px;
+ right: 25px;
+ font-size: 36px;
+ margin-left: 32px;
+}
+
+.sidemenu .closebtn:hover{
+    background-color: none;
+    color: red;
+}
+
+* {
+		 box-sizing: border-box;
+	  }
+	  html, body {
+		 margin: 0;
+		 padding: 0;
+	  }
+	  body {
+		 display: flex;
+		 min-height: 100vh;
+		 flex-direction: column;
+	  }
+
+main {
+		 flex: 1 0 auto;
+	  }
+footer {
+		 color: #fff;
+		 background: #333;
+		 position: absolute; /* required to position the copyright at the bottom */
+		 font-size: 80%;
+         width: 100%;
+         margin-top: 600px;
+	  }
+	  .footer-copyright {
+		 width: 100%;
+		 height: 40px;
+		 background: #111;
+		 /* positions the copyright at the bottom of the footer */
+		 padding: 10px;
+		 position: absolute;
+		 bottom: 0px;
+		 left: 0px;
+	  }
+	  .footer-body {
+		 margin-bottom: 100px;
+	  }
+	  /* the clearfix hack */
+	  .footer-body::after {
+		 content: "";
+		 display: block;
+		 clear: both;
+	  }
+	  /* float the divs */
+	  .footer-body > div {
+		 float: left;
+		 padding: 20px;
+	  }
+	  /* sets the width of the first column */
+	  .footer-body > div:first-child {
+		 font-size: 150%;
+		 width: 35%;
+		 text-align: center;
+	  }
+	  /* sets the width of the second column */
+	  .footer-body > div:last-child {
+		 width: 65%;
+	  }
+	  .footer-body ul {
+		 list-style-type: none;
+		 margin: 0px;
+		 padding: 0px;
+		 text-align: center;
+	  }
+	  .footer-body li > a {
+		 color: white;
+		 text-decoration: none;
+		 margin-bottom: 7px;
+	  }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <!-- <header>
+        <video src="9.mp4"  class="vid-bg" autoplay loop muted></video>
+        <div class="nav-area">
+            <div class="logo">U&A</div>
+
+        </div>
+    <div class="banner-text">
+        <h2>Welcome to U&A Kreations</h2>
+        <h3>The Home of quality graphic designs<br>
+        With a team of young and energetic<br>
+        professionals, we provide you with unique<br>
+        and excellent services</h3>
+    </div> -->
+    <div class="banner-text">
+        <h2>You can reach Us on the</h2>
+            <p>following social media platforms</p>
+            <img src="./loc.gif"> 
+            <h3>Sanatasi, Adjacent The Methosidt Church</h3>
+            
+    </div>
+    <div class="next">
+        <body>
+        <a href="./index_contactus.html"><button 
+            type="submit">Make request Now!</button></a> 
+            </body>
+        </div>
+    <div class="sidebar">
+        <div id="mainbox" onclick="openFunction()">&#9776;</div>
+        <div id="menu" class="sidemenu">
+         <div class="menuelements">
+        <!-- <a href="#">Home</a> -->
+        <a href="index_ourservies.html">Our Services</a>
+         <a href="index_images.html">About Us</a>
+         <a href="index.html">Home</a>
+         <!-- <a href="mailto:rahmanattah0@gmail.com">Mail Us</a> -->
+        </div>
+         <a href="#" class="closebtn" onclick="closeFunction()">&times;</a>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer-body">
+           <div> U&A KREATIONS </div>
+           <div>
+            <p> Welcome to U&A Kreations
+                The Home of quality graphic designs<br>
+                With a team of young and energetic<br>
+                professionals, we provide you with unique<br>
+                and excellent services </p>
+              <ul>
+                 <li><a href="#"> About </a></li>
+                 <li><a href="#"> Contact </a></li>
+                 <li><a href="#"> Terms & Conditions </a></li>
+                 <li><a href="#"> Privacy Policy </a></li>
+              </ul>
+           </div>
+        </div>
+        <div class="footer-copyright">
+           ©Rahman Web Design. 
+        </div>
+     </footer>
+
+      </body>
+      
+      
+      <script type="text/javascript">
+                      
+                      
+       function openFunction(){
+        document.getElementById("menu").style.width="300px";
+        document.getElementById("mainbox").style.marginLeft="300px";
+        document.getElementById("mainbox").innerHTML="";
+       }
+      function closeFunction(){
+       document.getElementById("menu").style.width="0px";
+       document.getElementById("mainbox").style.marginLeft="0px";
+       document.getElementById("mainbox").innerHTML="&#9776;";
+      }
+      </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+</head>
+
+<style>
+   
+   @media screen and (max-width: 750px){
+*{
+    margin: 0;
+}   
+   
+   body{
+    text-align: center;
+    font-family: arial;
+}
+
+input{
+    display: none;
+}
+
+.tag{
+    font-size: 1.4rem;
+    margin: 1.5rem 0rem;
+    padding: 5px 1.8rem;
+    border-radius: 50px;
+    background-color: #efefef;
+    display: inline-block;
+    color: black;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+
+.tag:hover{
+    background-color: lightblue;
+    transition: .2s;
+    color: white;
+}
+
+.tag:active{
+    background-color: blue;
+    color: white;
+}
+
+img{
+    width: 300px;
+    height: 300px;
+    transition: all 2s ease-in-out;
+    box-shadow: 0 0 5px 0 rgba(8, 0, 0, 0.4);
+}
+
+/* img:hover{
+    width: 500px;
+    height: 500px;
+    transition: 3s;
+} */
+
+/*filter css*/
+#fish:checked ~ .images > img:not([class*="fish"]),
+#bird:checked ~ .images > img:not([class*="bird"]),
+#lion:checked ~ .images > img:not([class*="lion"]){
+    width: 0px;
+    height: 0px;
+}
+
+/* #all:checked ~ .all,
+#fish:checked ~ .fish,
+#all:checked ~ .bird,
+#lion:checked ~ .lion,
+    background-color: #333333;
+    color: white; */
+
+
+</style>
+
+<body>
+    <h2>Filter your Images</h2>
+
+    <input type="radio" id="all" name="radioBtn" checked>
+    <input type="radio" id="fish" name="radioBtn">
+    <input type="radio" id="bird" name="radioBtn">
+    <input type="radio" id="lion" name="radioBtn">
+    
+    <label for="all" class="tag all">all</label>
+    <label for="fish" class="tag fish">fish</label>
+    <label for="bird" class="tag bird">bird</label>
+    <label for="lion" class="tag lion">lion</label>
+
+    <br>
+    
+    <div class="images">
+        <img src="./6.jpg" class="fish">
+        <img src="./7.jpg" class="bird">
+        <img src="./8.jpg" class="lion">
+
+        <img src="./9.jpg" class="fish">
+        <img src="./10.jpg" class="bird">
+        <img src="./11.jpg" class="lion">
+
+        <img src="./12.jpg" class="fish">
+        <img src="./13.jpg" class="bird">
+        <img src="./14.jpg" class="lion">
+
+        <img src="./15.jpg" class="fish">
+        <img src="./16.jpg" class="bird">
+        <img src="./17.jpg" class="lion">
+    
+    </div>
+    
+</body>
+</html>
